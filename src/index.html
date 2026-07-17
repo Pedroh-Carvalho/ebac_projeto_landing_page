@@ -3,26 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EBAC Tech Talks</title>
+    <title>Festa de aniverário</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    
     <link rel="stylesheet" href="styles/main.scss">
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header class="hero">
         <div class="container">
-            <img class="hero__logo" src="./images/ebac_logo.svg" alt="EBAC">
+            <img class="hero__logo" src="./images/icone-aniversario.png" alt="EBAC">
             <p class="hero__text">
-                O maior evento de tecnologia do Brasil começa em 10d 12h 20m 15s
+                O dia do meu aniversário está chegando faltam apenas <span id="contador"></span>
             </p>
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Localização</b>
+                        Terraço - Minha casa
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Horário</b>
+                        14:00
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Quando</b>
+                        09/011/2027 às 14hrs 
+                    </li>
+                </ul>
+                <a href="#" class="button button--primary">
+                    Confirmar presença
+                </a>
+            </div>
         </div>
     </header>
 
+    <section class="event event--vestimenta">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Estilo de vestimenta</h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste pariatur modi saepe necessitatibus fuga, dolore illum nemo nesciunt voluptas? Tenetur perspiciatis aliquid delectus rem enim error sapiente reprehenderit praesentium tempore.
+                </p>
+            </div>
+            <img class="event__image" src="./images/vestimenta-festa.jpg" alt="Front-end">
+        </div>
+    </section>
+    <section class="event event--doce event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Comida</h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste pariatur modi saepe necessitatibus fuga, dolore illum nemo nesciunt voluptas? Tenetur perspiciatis aliquid delectus rem enim error sapiente reprehenderit praesentium tempore.
+                </p>
+            </div>
+            <img class="event__image" src="./images/foto-doces.jpg" alt="Front-end">
+        </div>
+    </section>
+    <section class="event event--bebida">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Bebida</h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste pariatur modi saepe necessitatibus fuga, dolore illum nemo nesciunt voluptas? Tenetur perspiciatis aliquid delectus rem enim error sapiente reprehenderit praesentium tempore.
+                </p>
+            </div>
+            <img class="event__image" src="./images/foto-bebidas.jpg" alt="Front-end">
+        </div>
+    </section>
+    <section class="event event--presente event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Presentes</h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste pariatur modi saepe necessitatibus fuga, dolore illum nemo nesciunt voluptas? Tenetur perspiciatis aliquid delectus rem enim error sapiente reprehenderit praesentium tempore.
+                </p>
+            </div>
+            <img class="event__image" src="./images/icone-presente.jpg" alt="Front-end">
+        </div>
+    </section>
 
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>
